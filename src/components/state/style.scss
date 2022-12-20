@@ -1,0 +1,40 @@
+.toggle {
+    width: 100px;
+    height: 40px;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 100rem;
+    margin: 25px;
+    cursor: pointer;
+    &.active {
+        background-color: aqua;
+    }
+    .spiner {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100rem;
+        transition: all 0.3s;
+        &.active {
+            transform: translateX(55px);
+        }
+    }
+}
+.toggle-group {
+    width: 100px;
+    border: 1px solid red;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .toggle-on,
+    .toggle-off {
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid #333;
+        padding: 10px;
+        &:hover {
+            background-color: pink;
+        }
+    }
+}
