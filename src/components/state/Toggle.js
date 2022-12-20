@@ -8,7 +8,7 @@ function Toggle() {
     const [on, setOn] = useState(false);
     // console.log(on);
     const handleToggle = () => {
-      setOn(on => !on)
+        setOn(on => !on)
     }
 
     return (
@@ -16,11 +16,6 @@ function Toggle() {
             <div className={`toggle ${on ? "active" : ""}`} onClick={handleToggle}>
                 <div className={`spiner ${on ? "active" : ""}`}></div>
             </div>
-            {/* {on ? 'on' : 'off'} */}
-            {/* <div className='toggle-group'>
-                <div className='toggle-on' onClick={() => setOn(true)}>On</div>
-                <div className='toggle-off' onClick={() => setOn(false)}>Off</div>
-            </div> */}
         </div>
     )
 }

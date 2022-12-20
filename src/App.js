@@ -1,10 +1,10 @@
 import './App.scss';
-import Toggle from './components/state/Toggle';
+import GetApi from './components/getApi/GetApi';
 
 function App() {
   return (
-    <div>
-      <Toggle></Toggle>
+    <div className="App">
+      <GetApi></GetApi>
     </div>
   );
 }
